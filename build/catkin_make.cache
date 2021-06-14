@@ -1,0 +1,2 @@
+Yuntai_UART:joy:joystick_drivers
+-DCATKIN_DEVEL_PREFIX=/home/dango/dango_file/Yuntai_ws/devel -DCMAKE_INSTALL_PREFIX=/home/dango/dango_file/Yuntai_ws/install -G Unix Makefiles

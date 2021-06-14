@@ -1,0 +1,8 @@
+prefix=/home/dango/dango_file/Yuntai_ws/devel
+
+Name: Yuntai_UART
+Description: Description of Yuntai_UART
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

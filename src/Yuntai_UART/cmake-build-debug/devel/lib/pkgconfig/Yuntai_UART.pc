@@ -1,0 +1,8 @@
+prefix=/home/dango/dango_file/Yuntai_ws/src/Yuntai_UART/cmake-build-debug/devel
+
+Name: Yuntai_UART
+Description: Description of Yuntai_UART
+Version: 0.0.0
+Cflags: -I/home/dango/dango_file/Yuntai_ws/src/Yuntai_UART/include
+Libs: -L${prefix}/lib -lYuntai_UART
+Requires: 

@@ -1,0 +1,1 @@
+/usr/bin/c++ -fPIC -g  -shared -Wl,-soname,libUART_solve.so -o devel/lib/libUART_solve.so CMakeFiles/UART_solve.dir/src/UART_solve.cpp.o 
