@@ -3,6 +3,8 @@
 
 CMakeFiles/UART_solve.dir/src/UART_solve.cpp.o: ../include/UART_solve.hpp
 CMakeFiles/UART_solve.dir/src/UART_solve.cpp.o: ../src/UART_solve.cpp
+CMakeFiles/UART_solve.dir/src/UART_solve.cpp.o: /opt/ros/melodic/include/geometry_msgs/Quaternion.h
+CMakeFiles/UART_solve.dir/src/UART_solve.cpp.o: /opt/ros/melodic/include/geometry_msgs/Vector3.h
 CMakeFiles/UART_solve.dir/src/UART_solve.cpp.o: /opt/ros/melodic/include/ros/advertise_options.h
 CMakeFiles/UART_solve.dir/src/UART_solve.cpp.o: /opt/ros/melodic/include/ros/advertise_service_options.h
 CMakeFiles/UART_solve.dir/src/UART_solve.cpp.o: /opt/ros/melodic/include/ros/assert.h
@@ -21,6 +23,7 @@ CMakeFiles/UART_solve.dir/src/UART_solve.cpp.o: /opt/ros/melodic/include/ros/mas
 CMakeFiles/UART_solve.dir/src/UART_solve.cpp.o: /opt/ros/melodic/include/ros/message.h
 CMakeFiles/UART_solve.dir/src/UART_solve.cpp.o: /opt/ros/melodic/include/ros/message_event.h
 CMakeFiles/UART_solve.dir/src/UART_solve.cpp.o: /opt/ros/melodic/include/ros/message_forward.h
+CMakeFiles/UART_solve.dir/src/UART_solve.cpp.o: /opt/ros/melodic/include/ros/message_operations.h
 CMakeFiles/UART_solve.dir/src/UART_solve.cpp.o: /opt/ros/melodic/include/ros/message_traits.h
 CMakeFiles/UART_solve.dir/src/UART_solve.cpp.o: /opt/ros/melodic/include/ros/names.h
 CMakeFiles/UART_solve.dir/src/UART_solve.cpp.o: /opt/ros/melodic/include/ros/node_handle.h
@@ -58,6 +61,8 @@ CMakeFiles/UART_solve.dir/src/UART_solve.cpp.o: /opt/ros/melodic/include/ros/typ
 CMakeFiles/UART_solve.dir/src/UART_solve.cpp.o: /opt/ros/melodic/include/ros/wall_timer.h
 CMakeFiles/UART_solve.dir/src/UART_solve.cpp.o: /opt/ros/melodic/include/ros/wall_timer_options.h
 CMakeFiles/UART_solve.dir/src/UART_solve.cpp.o: /opt/ros/melodic/include/rosconsole/macros_generated.h
+CMakeFiles/UART_solve.dir/src/UART_solve.cpp.o: /opt/ros/melodic/include/sensor_msgs/Imu.h
+CMakeFiles/UART_solve.dir/src/UART_solve.cpp.o: /opt/ros/melodic/include/std_msgs/Header.h
 CMakeFiles/UART_solve.dir/src/UART_solve.cpp.o: /opt/ros/melodic/include/xmlrpcpp/XmlRpcDecl.h
 CMakeFiles/UART_solve.dir/src/UART_solve.cpp.o: /opt/ros/melodic/include/xmlrpcpp/XmlRpcValue.h
 

@@ -3,6 +3,14 @@
 
 CMakeFiles/yuntai_uart.dir/app/yuntai_uart.cpp.o: ../app/yuntai_uart.cpp
 CMakeFiles/yuntai_uart.dir/app/yuntai_uart.cpp.o: ../include/UART_solve.hpp
+CMakeFiles/yuntai_uart.dir/app/yuntai_uart.cpp.o: /opt/ros/melodic/include/geometry_msgs/Point.h
+CMakeFiles/yuntai_uart.dir/app/yuntai_uart.cpp.o: /opt/ros/melodic/include/geometry_msgs/Pose.h
+CMakeFiles/yuntai_uart.dir/app/yuntai_uart.cpp.o: /opt/ros/melodic/include/geometry_msgs/PoseWithCovariance.h
+CMakeFiles/yuntai_uart.dir/app/yuntai_uart.cpp.o: /opt/ros/melodic/include/geometry_msgs/Quaternion.h
+CMakeFiles/yuntai_uart.dir/app/yuntai_uart.cpp.o: /opt/ros/melodic/include/geometry_msgs/Twist.h
+CMakeFiles/yuntai_uart.dir/app/yuntai_uart.cpp.o: /opt/ros/melodic/include/geometry_msgs/TwistWithCovariance.h
+CMakeFiles/yuntai_uart.dir/app/yuntai_uart.cpp.o: /opt/ros/melodic/include/geometry_msgs/Vector3.h
+CMakeFiles/yuntai_uart.dir/app/yuntai_uart.cpp.o: /opt/ros/melodic/include/nav_msgs/Odometry.h
 CMakeFiles/yuntai_uart.dir/app/yuntai_uart.cpp.o: /opt/ros/melodic/include/ros/advertise_options.h
 CMakeFiles/yuntai_uart.dir/app/yuntai_uart.cpp.o: /opt/ros/melodic/include/ros/advertise_service_options.h
 CMakeFiles/yuntai_uart.dir/app/yuntai_uart.cpp.o: /opt/ros/melodic/include/ros/assert.h
@@ -59,6 +67,7 @@ CMakeFiles/yuntai_uart.dir/app/yuntai_uart.cpp.o: /opt/ros/melodic/include/ros/t
 CMakeFiles/yuntai_uart.dir/app/yuntai_uart.cpp.o: /opt/ros/melodic/include/ros/wall_timer.h
 CMakeFiles/yuntai_uart.dir/app/yuntai_uart.cpp.o: /opt/ros/melodic/include/ros/wall_timer_options.h
 CMakeFiles/yuntai_uart.dir/app/yuntai_uart.cpp.o: /opt/ros/melodic/include/rosconsole/macros_generated.h
+CMakeFiles/yuntai_uart.dir/app/yuntai_uart.cpp.o: /opt/ros/melodic/include/sensor_msgs/Imu.h
 CMakeFiles/yuntai_uart.dir/app/yuntai_uart.cpp.o: /opt/ros/melodic/include/sensor_msgs/Joy.h
 CMakeFiles/yuntai_uart.dir/app/yuntai_uart.cpp.o: /opt/ros/melodic/include/serial/serial.h
 CMakeFiles/yuntai_uart.dir/app/yuntai_uart.cpp.o: /opt/ros/melodic/include/serial/v8stdint.h

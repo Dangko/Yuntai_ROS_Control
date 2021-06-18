@@ -48,16 +48,6 @@
 
    
 
-运行ros程序前，需要解锁USB权限，USB2TTL模块才能被打开：
-
-`sudo chomod 666 /dev/ttyUSB0`
-
-运行可执行文件：
-
-`rosrun  Yuntai_UART  yuntai_uart`
-
-
-
 # 三、手柄控制
 
 解锁手柄权限：
@@ -70,13 +60,49 @@
 
 
 
-# 四、ROS接口(待定)
+# 四、ROS接口
 
 拟定根据接收话题的类型，决定速度或位置控制模式，或是在接收停止指令后进行急停
 
+运行ros程序前，需要解锁USB权限，USB2TTL模块才能被打开：
+
+`sudo chomod 666 /dev/ttyUSB0`
+
+运行可执行文件：
+
+`rosrun  Yuntai_UART  yuntai_uart`
 
 
-[github]()
+
+## 4.1订阅的话题
+
+- $/vel$
+
+  消息类型：`geometry_msgs::Twist`
+
+  绕y轴速度：`twist.angular.y`
+
+  绕z轴速度：`twist.angular.z`
+
+  发布`/vel`话题，并给上述内容赋值，即可控制绕y、z轴的速度
+
+- $/pose$
+
+  消息类型：`sensor_msgs::Imu`
+
+  $pitch$：`imu.orientation.y`
+
+  $yaw$：`twist.orientation.z`
+
+  发布`/pose`话题，并给上述内容赋值，即可控制云台的 $pitch$、$yaw$
+
+- $/joy$
+
+  消息类型：`sensor_msgs::Joy`
+
+  仅用于手柄控制时使用
+
+
 
 
 

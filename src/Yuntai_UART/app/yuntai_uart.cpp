@@ -1,13 +1,39 @@
 #include <ros/ros.h>
 #include <serial/serial.h>
 #include <std_msgs/String.h>
+#include <geometry_msgs/Twist.h>
+#include <nav_msgs/Odometry.h>
 #include <sensor_msgs/Joy.h>
+#include "sensor_msgs/Imu.h"
 #include "../include/UART_solve.hpp"
+
+////声明串口对象
+serial::Serial yuntai_port;
 
 void joy_callback(const sensor_msgs::Joy::ConstPtr& joy)
 {
-    vel1 = joy->axes[0]*300*(-1);
-    vel2 = joy->axes[1]*300;
+    vel1 = joy->axes[2]*300*(-1);
+    vel2 = joy->axes[3]*300;
+    TxBuffer_Package_vel(TxBuffer,vel1,vel2);
+    yuntai_port.write(TxBuffer,8);
+}
+
+void vel_callback(const geometry_msgs::Twist ::ConstPtr& twist)
+{
+    vel1 = twist->angular.y;
+    vel2 = twist->angular.z;
+
+    TxBuffer_Package_vel(TxBuffer,vel1,vel2);
+    yuntai_port.write(TxBuffer,8);
+}
+
+void pos_callback(const sensor_msgs::Imu ::ConstPtr& imu)
+{
+    pitch =imu->orientation.y;
+    yaw = imu->orientation.z;
+
+    TxBuffer_Package_pos(TxBuffer,pitch,yaw);
+    yuntai_port.write(TxBuffer,8);
 }
 
 
@@ -16,14 +42,11 @@ int main(int argc, char** argv)
     ros::init(argc, argv, "yuntai_serial");
     ros::NodeHandle n;
 
-    ////声明串口对象
-    serial::Serial yuntai_port;
-
-    uint8_t RxBuffer[20];
-    uint8_t TxBuffer[8];
 
     ros::Subscriber sub_joy = n.subscribe<sensor_msgs::Joy>("/joy",1,joy_callback);
-
+    ros::Subscriber sub_vel = n.subscribe<geometry_msgs::Twist>("/vel",1,vel_callback);
+    ros::Subscriber sub_pose = n.subscribe<sensor_msgs::Imu>("/pose",1,pos_callback);
+    ros::Publisher  pub_pose = n.advertise<sensor_msgs::Imu>("/pose_feedback",1);
 
     try
     {
@@ -55,38 +78,22 @@ int main(int argc, char** argv)
     int count=0;
     while(ros::ok())
     {
-
         count+=1;
         if(yuntai_port.available()){
             std_msgs::String result;
             yuntai_port.read(RxBuffer,20);
             RxBuffer_Decode(RxBuffer);
+            if(flag_decode==true)
+            {
+                pub_pose.publish(pose_feedback);
+                flag_decode = false;
+            }
         }
-        TxBuffer_Package(TxBuffer,vel1,vel2);
-        yuntai_port.write(TxBuffer,8);
+
+       // TxBuffer_Package(TxBuffer,vel1,vel2);
+       // yuntai_port.write(TxBuffer,8);
        // ROS_INFO("vel1:%d",vel1);
        // ROS_INFO("vel2:%d\n",vel2);
-
-
-
-
-        /*
-        int16_t v = -50;
-        uint8_t vel_buffer[2];
-        int16_t v_decode;
-
-
-        vel_buffer[0] = v>>8;
-        vel_buffer[1] = v;
-        v_decode = (int)(vel_buffer[0]<<8|vel_buffer[1]);
-        count+=1;
-        if(count>50)
-        {
-            ROS_INFO("vel decode :%d",v_decode);
-            ROS_INFO("vel decode :%d\n",v);
-            count=0;
-        }
-         */
 
         ros::spinOnce();
         loop_rate.sleep();
