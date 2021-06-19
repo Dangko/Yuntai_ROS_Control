@@ -104,5 +104,13 @@
 
 
 
+## 4.2 发布的话题
 
+- $/pose\_feedback$
+
+  $pitch$：`imu.orientation.y`
+
+  $yaw$：`twist.orientation.z`
+
+  订阅`/pose_feedback`话题，并获取上述内容，即可获取云台当前的 $pitch$、$yaw$
 

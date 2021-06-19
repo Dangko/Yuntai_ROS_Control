@@ -20,10 +20,12 @@ void joy_callback(const sensor_msgs::Joy::ConstPtr& joy)
 
 void vel_callback(const geometry_msgs::Twist ::ConstPtr& twist)
 {
-    vel1 = twist->angular.y;
-    vel2 = twist->angular.z;
-
-    TxBuffer_Package_vel(TxBuffer,vel1,vel2);
+    float vel1_f = twist->angular.y;
+    float vel2_f = twist->angular.z;
+    vel1 = (int16_t)vel1_f;
+    vel2 = (int16_t)vel2_f;
+    //ROS_INFO("pitch:%d",vel1);
+    TxBuffer_Package_vel(TxBuffer,vel2,vel1);
     yuntai_port.write(TxBuffer,8);
 }
 
@@ -31,8 +33,9 @@ void pos_callback(const sensor_msgs::Imu ::ConstPtr& imu)
 {
     pitch =imu->orientation.y;
     yaw = imu->orientation.z;
-
-    TxBuffer_Package_pos(TxBuffer,pitch,yaw);
+    ROS_INFO("pitch:%f",pitch);
+    ROS_INFO("yaw:%f\n",yaw);
+    TxBuffer_Package_pos(TxBuffer,yaw,pitch);
     yuntai_port.write(TxBuffer,8);
 }
 
