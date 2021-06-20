@@ -24,8 +24,23 @@ void vel_callback(const geometry_msgs::Twist ::ConstPtr& twist)
     float vel2_f = twist->angular.z;
     vel1 = (int16_t)vel1_f;
     vel2 = (int16_t)vel2_f;
-    //ROS_INFO("pitch:%d",vel1);
-    TxBuffer_Package_vel(TxBuffer,vel2,vel1);
+    ROS_INFO("Subcribe topic /vel successful,your control command is:");
+    ROS_INFO("set pitch rpm :%d",vel1);
+    ROS_INFO("set yaw rpm :%d\n",vel2);
+    TxBuffer_Package_vel(TxBuffer,vel1,vel2);
+    yuntai_port.write(TxBuffer,8);
+}
+
+void vel_set_callback(const geometry_msgs::Twist ::ConstPtr& twist)
+{
+    float vel1_f = twist->angular.y;
+    float vel2_f = twist->angular.z;
+    vel1 = (int16_t)vel1_f;
+    vel2 = (int16_t)vel2_f;
+    ROS_INFO("Subcribe topic /vel_set successful,your control command is:");
+    ROS_INFO("set pitch rpm max:%d",vel1);
+    ROS_INFO("set yaw rpm max:%d\n",vel2);
+    TxBuffer_Package_vel_set(TxBuffer,vel1,vel2);
     yuntai_port.write(TxBuffer,8);
 }
 
@@ -33,9 +48,10 @@ void pos_callback(const sensor_msgs::Imu ::ConstPtr& imu)
 {
     pitch =imu->orientation.y;
     yaw = imu->orientation.z;
+    ROS_INFO("Subcribe topic /pose successful,your control command is:");
     ROS_INFO("pitch:%f",pitch);
     ROS_INFO("yaw:%f\n",yaw);
-    TxBuffer_Package_pos(TxBuffer,yaw,pitch);
+    TxBuffer_Package_pos(TxBuffer,pitch,yaw);
     yuntai_port.write(TxBuffer,8);
 }
 
@@ -48,6 +64,7 @@ int main(int argc, char** argv)
 
     ros::Subscriber sub_joy = n.subscribe<sensor_msgs::Joy>("/joy",1,joy_callback);
     ros::Subscriber sub_vel = n.subscribe<geometry_msgs::Twist>("/vel",1,vel_callback);
+    ros::Subscriber sub_vel_set = n.subscribe<geometry_msgs::Twist>("/vel_set",1,vel_set_callback);
     ros::Subscriber sub_pose = n.subscribe<sensor_msgs::Imu>("/pose",1,pos_callback);
     ros::Publisher  pub_pose = n.advertise<sensor_msgs::Imu>("/pose_feedback",1);
 
@@ -77,7 +94,7 @@ int main(int argc, char** argv)
     }
 
     //指定循环的频率
-    ros::Rate loop_rate(50);
+    ros::Rate loop_rate(500);
     int count=0;
     while(ros::ok())
     {

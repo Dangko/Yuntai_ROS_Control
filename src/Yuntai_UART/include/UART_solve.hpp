@@ -8,6 +8,7 @@ void RxBuffer_Decode(uint8_t* RxBuffer);
 void TxBuffer_Package_vel(uint8_t* TxBuffer,int16_t vel1,int16_t vel2);
 void TxBuffer_Package_pos(uint8_t* TxBuffer,float pitch,float yaw);
 void RxBuffer_Decode_vel(uint8_t* RxBuffer);
+void TxBuffer_Package_vel_set(uint8_t* TxBuffer,int16_t vel1,int16_t vel2);
 
 extern float angle[2];
 extern int16_t vel1;

@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/yuntai_uart.dir/src/yuntai_uart.cpp.o"
+  "CMakeFiles/yuntai_uart.dir/app/yuntai_uart.cpp.o"
   "/home/dango/dango_file/Yuntai_ws/devel/lib/Yuntai_UART/yuntai_uart.pdb"
   "/home/dango/dango_file/Yuntai_ws/devel/lib/Yuntai_UART/yuntai_uart"
 )

@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/dango/dango_file/Yuntai_ws/src/Yuntai_UART/app/yuntai_uart.cpp" "/home/dango/dango_file/Yuntai_ws/build/Yuntai_UART/CMakeFiles/yuntai_uart.dir/app/yuntai_uart.cpp.o"
+  "/home/dango/dango_file/Yuntai_ws/src/Yuntai_UART/src/UART_solve.cpp" "/home/dango/dango_file/Yuntai_ws/build/Yuntai_UART/CMakeFiles/UART_solve.dir/src/UART_solve.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -24,7 +24,6 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/dango/dango_file/Yuntai_ws/build/Yuntai_UART/CMakeFiles/UART_solve.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

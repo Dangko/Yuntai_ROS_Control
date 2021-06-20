@@ -57,38 +57,38 @@ include Yuntai_UART/CMakeFiles/yuntai_uart.dir/progress.make
 # Include the compile flags for this target's objects.
 include Yuntai_UART/CMakeFiles/yuntai_uart.dir/flags.make
 
-Yuntai_UART/CMakeFiles/yuntai_uart.dir/src/yuntai_uart.cpp.o: Yuntai_UART/CMakeFiles/yuntai_uart.dir/flags.make
-Yuntai_UART/CMakeFiles/yuntai_uart.dir/src/yuntai_uart.cpp.o: /home/dango/dango_file/Yuntai_ws/src/Yuntai_UART/src/yuntai_uart.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dango/dango_file/Yuntai_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object Yuntai_UART/CMakeFiles/yuntai_uart.dir/src/yuntai_uart.cpp.o"
-	cd /home/dango/dango_file/Yuntai_ws/build/Yuntai_UART && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/yuntai_uart.dir/src/yuntai_uart.cpp.o -c /home/dango/dango_file/Yuntai_ws/src/Yuntai_UART/src/yuntai_uart.cpp
+Yuntai_UART/CMakeFiles/yuntai_uart.dir/app/yuntai_uart.cpp.o: Yuntai_UART/CMakeFiles/yuntai_uart.dir/flags.make
+Yuntai_UART/CMakeFiles/yuntai_uart.dir/app/yuntai_uart.cpp.o: /home/dango/dango_file/Yuntai_ws/src/Yuntai_UART/app/yuntai_uart.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dango/dango_file/Yuntai_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object Yuntai_UART/CMakeFiles/yuntai_uart.dir/app/yuntai_uart.cpp.o"
+	cd /home/dango/dango_file/Yuntai_ws/build/Yuntai_UART && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/yuntai_uart.dir/app/yuntai_uart.cpp.o -c /home/dango/dango_file/Yuntai_ws/src/Yuntai_UART/app/yuntai_uart.cpp
 
-Yuntai_UART/CMakeFiles/yuntai_uart.dir/src/yuntai_uart.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/yuntai_uart.dir/src/yuntai_uart.cpp.i"
-	cd /home/dango/dango_file/Yuntai_ws/build/Yuntai_UART && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dango/dango_file/Yuntai_ws/src/Yuntai_UART/src/yuntai_uart.cpp > CMakeFiles/yuntai_uart.dir/src/yuntai_uart.cpp.i
+Yuntai_UART/CMakeFiles/yuntai_uart.dir/app/yuntai_uart.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/yuntai_uart.dir/app/yuntai_uart.cpp.i"
+	cd /home/dango/dango_file/Yuntai_ws/build/Yuntai_UART && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dango/dango_file/Yuntai_ws/src/Yuntai_UART/app/yuntai_uart.cpp > CMakeFiles/yuntai_uart.dir/app/yuntai_uart.cpp.i
 
-Yuntai_UART/CMakeFiles/yuntai_uart.dir/src/yuntai_uart.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/yuntai_uart.dir/src/yuntai_uart.cpp.s"
-	cd /home/dango/dango_file/Yuntai_ws/build/Yuntai_UART && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dango/dango_file/Yuntai_ws/src/Yuntai_UART/src/yuntai_uart.cpp -o CMakeFiles/yuntai_uart.dir/src/yuntai_uart.cpp.s
+Yuntai_UART/CMakeFiles/yuntai_uart.dir/app/yuntai_uart.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/yuntai_uart.dir/app/yuntai_uart.cpp.s"
+	cd /home/dango/dango_file/Yuntai_ws/build/Yuntai_UART && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dango/dango_file/Yuntai_ws/src/Yuntai_UART/app/yuntai_uart.cpp -o CMakeFiles/yuntai_uart.dir/app/yuntai_uart.cpp.s
 
-Yuntai_UART/CMakeFiles/yuntai_uart.dir/src/yuntai_uart.cpp.o.requires:
+Yuntai_UART/CMakeFiles/yuntai_uart.dir/app/yuntai_uart.cpp.o.requires:
 
-.PHONY : Yuntai_UART/CMakeFiles/yuntai_uart.dir/src/yuntai_uart.cpp.o.requires
+.PHONY : Yuntai_UART/CMakeFiles/yuntai_uart.dir/app/yuntai_uart.cpp.o.requires
 
-Yuntai_UART/CMakeFiles/yuntai_uart.dir/src/yuntai_uart.cpp.o.provides: Yuntai_UART/CMakeFiles/yuntai_uart.dir/src/yuntai_uart.cpp.o.requires
-	$(MAKE) -f Yuntai_UART/CMakeFiles/yuntai_uart.dir/build.make Yuntai_UART/CMakeFiles/yuntai_uart.dir/src/yuntai_uart.cpp.o.provides.build
-.PHONY : Yuntai_UART/CMakeFiles/yuntai_uart.dir/src/yuntai_uart.cpp.o.provides
+Yuntai_UART/CMakeFiles/yuntai_uart.dir/app/yuntai_uart.cpp.o.provides: Yuntai_UART/CMakeFiles/yuntai_uart.dir/app/yuntai_uart.cpp.o.requires
+	$(MAKE) -f Yuntai_UART/CMakeFiles/yuntai_uart.dir/build.make Yuntai_UART/CMakeFiles/yuntai_uart.dir/app/yuntai_uart.cpp.o.provides.build
+.PHONY : Yuntai_UART/CMakeFiles/yuntai_uart.dir/app/yuntai_uart.cpp.o.provides
 
-Yuntai_UART/CMakeFiles/yuntai_uart.dir/src/yuntai_uart.cpp.o.provides.build: Yuntai_UART/CMakeFiles/yuntai_uart.dir/src/yuntai_uart.cpp.o
+Yuntai_UART/CMakeFiles/yuntai_uart.dir/app/yuntai_uart.cpp.o.provides.build: Yuntai_UART/CMakeFiles/yuntai_uart.dir/app/yuntai_uart.cpp.o
 
 
 # Object files for target yuntai_uart
 yuntai_uart_OBJECTS = \
-"CMakeFiles/yuntai_uart.dir/src/yuntai_uart.cpp.o"
+"CMakeFiles/yuntai_uart.dir/app/yuntai_uart.cpp.o"
 
 # External object files for target yuntai_uart
 yuntai_uart_EXTERNAL_OBJECTS =
 
-/home/dango/dango_file/Yuntai_ws/devel/lib/Yuntai_UART/yuntai_uart: Yuntai_UART/CMakeFiles/yuntai_uart.dir/src/yuntai_uart.cpp.o
+/home/dango/dango_file/Yuntai_ws/devel/lib/Yuntai_UART/yuntai_uart: Yuntai_UART/CMakeFiles/yuntai_uart.dir/app/yuntai_uart.cpp.o
 /home/dango/dango_file/Yuntai_ws/devel/lib/Yuntai_UART/yuntai_uart: Yuntai_UART/CMakeFiles/yuntai_uart.dir/build.make
 /home/dango/dango_file/Yuntai_ws/devel/lib/Yuntai_UART/yuntai_uart: /opt/ros/melodic/lib/libroscpp.so
 /home/dango/dango_file/Yuntai_ws/devel/lib/Yuntai_UART/yuntai_uart: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so
@@ -109,6 +109,7 @@ yuntai_uart_EXTERNAL_OBJECTS =
 /home/dango/dango_file/Yuntai_ws/devel/lib/Yuntai_UART/yuntai_uart: /usr/lib/x86_64-linux-gnu/libpthread.so
 /home/dango/dango_file/Yuntai_ws/devel/lib/Yuntai_UART/yuntai_uart: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so.0.4
 /home/dango/dango_file/Yuntai_ws/devel/lib/Yuntai_UART/yuntai_uart: /opt/ros/melodic/lib/libserial.so
+/home/dango/dango_file/Yuntai_ws/devel/lib/Yuntai_UART/yuntai_uart: /home/dango/dango_file/Yuntai_ws/devel/lib/libUART_solve.so
 /home/dango/dango_file/Yuntai_ws/devel/lib/Yuntai_UART/yuntai_uart: Yuntai_UART/CMakeFiles/yuntai_uart.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/dango/dango_file/Yuntai_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable /home/dango/dango_file/Yuntai_ws/devel/lib/Yuntai_UART/yuntai_uart"
 	cd /home/dango/dango_file/Yuntai_ws/build/Yuntai_UART && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/yuntai_uart.dir/link.txt --verbose=$(VERBOSE)
@@ -118,7 +119,7 @@ Yuntai_UART/CMakeFiles/yuntai_uart.dir/build: /home/dango/dango_file/Yuntai_ws/d
 
 .PHONY : Yuntai_UART/CMakeFiles/yuntai_uart.dir/build
 
-Yuntai_UART/CMakeFiles/yuntai_uart.dir/requires: Yuntai_UART/CMakeFiles/yuntai_uart.dir/src/yuntai_uart.cpp.o.requires
+Yuntai_UART/CMakeFiles/yuntai_uart.dir/requires: Yuntai_UART/CMakeFiles/yuntai_uart.dir/app/yuntai_uart.cpp.o.requires
 
 .PHONY : Yuntai_UART/CMakeFiles/yuntai_uart.dir/requires
 

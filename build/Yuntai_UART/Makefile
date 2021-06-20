@@ -91,17 +91,6 @@ rebuild_cache/fast: rebuild_cache
 
 .PHONY : rebuild_cache/fast
 
-# Special rule for the target test
-test:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
-	/usr/bin/ctest --force-new-ctest-process $(ARGS)
-.PHONY : test
-
-# Special rule for the target test
-test/fast: test
-
-.PHONY : test/fast
-
 # Special rule for the target list_install_components
 list_install_components:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
@@ -134,6 +123,17 @@ install/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
 	/usr/bin/cmake -P cmake_install.cmake
 .PHONY : install/fast
+
+# Special rule for the target test
+test:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
+	/usr/bin/ctest --force-new-ctest-process $(ARGS)
+.PHONY : test
+
+# Special rule for the target test
+test/fast: test
+
+.PHONY : test/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -258,19 +258,19 @@ roscpp_generate_messages_cpp/fast:
 .PHONY : roscpp_generate_messages_cpp/fast
 
 # Convenience name for target.
-Yuntai_UART/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule:
-	cd /home/dango/dango_file/Yuntai_ws/build && $(MAKE) -f CMakeFiles/Makefile2 Yuntai_UART/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule
-.PHONY : Yuntai_UART/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule
+Yuntai_UART/CMakeFiles/yuntai_uart.dir/rule:
+	cd /home/dango/dango_file/Yuntai_ws/build && $(MAKE) -f CMakeFiles/Makefile2 Yuntai_UART/CMakeFiles/yuntai_uart.dir/rule
+.PHONY : Yuntai_UART/CMakeFiles/yuntai_uart.dir/rule
 
 # Convenience name for target.
-rosgraph_msgs_generate_messages_lisp: Yuntai_UART/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule
+yuntai_uart: Yuntai_UART/CMakeFiles/yuntai_uart.dir/rule
 
-.PHONY : rosgraph_msgs_generate_messages_lisp
+.PHONY : yuntai_uart
 
 # fast build rule for target.
-rosgraph_msgs_generate_messages_lisp/fast:
-	cd /home/dango/dango_file/Yuntai_ws/build && $(MAKE) -f Yuntai_UART/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build.make Yuntai_UART/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build
-.PHONY : rosgraph_msgs_generate_messages_lisp/fast
+yuntai_uart/fast:
+	cd /home/dango/dango_file/Yuntai_ws/build && $(MAKE) -f Yuntai_UART/CMakeFiles/yuntai_uart.dir/build.make Yuntai_UART/CMakeFiles/yuntai_uart.dir/build
+.PHONY : yuntai_uart/fast
 
 # Convenience name for target.
 Yuntai_UART/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule:
@@ -288,19 +288,34 @@ rosgraph_msgs_generate_messages_eus/fast:
 .PHONY : rosgraph_msgs_generate_messages_eus/fast
 
 # Convenience name for target.
-Yuntai_UART/CMakeFiles/yuntai_uart.dir/rule:
-	cd /home/dango/dango_file/Yuntai_ws/build && $(MAKE) -f CMakeFiles/Makefile2 Yuntai_UART/CMakeFiles/yuntai_uart.dir/rule
-.PHONY : Yuntai_UART/CMakeFiles/yuntai_uart.dir/rule
+Yuntai_UART/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule:
+	cd /home/dango/dango_file/Yuntai_ws/build && $(MAKE) -f CMakeFiles/Makefile2 Yuntai_UART/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule
+.PHONY : Yuntai_UART/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
-yuntai_uart: Yuntai_UART/CMakeFiles/yuntai_uart.dir/rule
+rosgraph_msgs_generate_messages_lisp: Yuntai_UART/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule
 
-.PHONY : yuntai_uart
+.PHONY : rosgraph_msgs_generate_messages_lisp
 
 # fast build rule for target.
-yuntai_uart/fast:
-	cd /home/dango/dango_file/Yuntai_ws/build && $(MAKE) -f Yuntai_UART/CMakeFiles/yuntai_uart.dir/build.make Yuntai_UART/CMakeFiles/yuntai_uart.dir/build
-.PHONY : yuntai_uart/fast
+rosgraph_msgs_generate_messages_lisp/fast:
+	cd /home/dango/dango_file/Yuntai_ws/build && $(MAKE) -f Yuntai_UART/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build.make Yuntai_UART/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build
+.PHONY : rosgraph_msgs_generate_messages_lisp/fast
+
+# Convenience name for target.
+Yuntai_UART/CMakeFiles/UART_solve.dir/rule:
+	cd /home/dango/dango_file/Yuntai_ws/build && $(MAKE) -f CMakeFiles/Makefile2 Yuntai_UART/CMakeFiles/UART_solve.dir/rule
+.PHONY : Yuntai_UART/CMakeFiles/UART_solve.dir/rule
+
+# Convenience name for target.
+UART_solve: Yuntai_UART/CMakeFiles/UART_solve.dir/rule
+
+.PHONY : UART_solve
+
+# fast build rule for target.
+UART_solve/fast:
+	cd /home/dango/dango_file/Yuntai_ws/build && $(MAKE) -f Yuntai_UART/CMakeFiles/UART_solve.dir/build.make Yuntai_UART/CMakeFiles/UART_solve.dir/build
+.PHONY : UART_solve/fast
 
 # Convenience name for target.
 Yuntai_UART/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule:
@@ -407,32 +422,59 @@ std_msgs_generate_messages_py/fast:
 	cd /home/dango/dango_file/Yuntai_ws/build && $(MAKE) -f Yuntai_UART/CMakeFiles/std_msgs_generate_messages_py.dir/build.make Yuntai_UART/CMakeFiles/std_msgs_generate_messages_py.dir/build
 .PHONY : std_msgs_generate_messages_py/fast
 
-src/yuntai_uart.o: src/yuntai_uart.cpp.o
+app/yuntai_uart.o: app/yuntai_uart.cpp.o
 
-.PHONY : src/yuntai_uart.o
+.PHONY : app/yuntai_uart.o
 
 # target to build an object file
-src/yuntai_uart.cpp.o:
-	cd /home/dango/dango_file/Yuntai_ws/build && $(MAKE) -f Yuntai_UART/CMakeFiles/yuntai_uart.dir/build.make Yuntai_UART/CMakeFiles/yuntai_uart.dir/src/yuntai_uart.cpp.o
-.PHONY : src/yuntai_uart.cpp.o
+app/yuntai_uart.cpp.o:
+	cd /home/dango/dango_file/Yuntai_ws/build && $(MAKE) -f Yuntai_UART/CMakeFiles/yuntai_uart.dir/build.make Yuntai_UART/CMakeFiles/yuntai_uart.dir/app/yuntai_uart.cpp.o
+.PHONY : app/yuntai_uart.cpp.o
 
-src/yuntai_uart.i: src/yuntai_uart.cpp.i
+app/yuntai_uart.i: app/yuntai_uart.cpp.i
 
-.PHONY : src/yuntai_uart.i
+.PHONY : app/yuntai_uart.i
 
 # target to preprocess a source file
-src/yuntai_uart.cpp.i:
-	cd /home/dango/dango_file/Yuntai_ws/build && $(MAKE) -f Yuntai_UART/CMakeFiles/yuntai_uart.dir/build.make Yuntai_UART/CMakeFiles/yuntai_uart.dir/src/yuntai_uart.cpp.i
-.PHONY : src/yuntai_uart.cpp.i
+app/yuntai_uart.cpp.i:
+	cd /home/dango/dango_file/Yuntai_ws/build && $(MAKE) -f Yuntai_UART/CMakeFiles/yuntai_uart.dir/build.make Yuntai_UART/CMakeFiles/yuntai_uart.dir/app/yuntai_uart.cpp.i
+.PHONY : app/yuntai_uart.cpp.i
 
-src/yuntai_uart.s: src/yuntai_uart.cpp.s
+app/yuntai_uart.s: app/yuntai_uart.cpp.s
 
-.PHONY : src/yuntai_uart.s
+.PHONY : app/yuntai_uart.s
 
 # target to generate assembly for a file
-src/yuntai_uart.cpp.s:
-	cd /home/dango/dango_file/Yuntai_ws/build && $(MAKE) -f Yuntai_UART/CMakeFiles/yuntai_uart.dir/build.make Yuntai_UART/CMakeFiles/yuntai_uart.dir/src/yuntai_uart.cpp.s
-.PHONY : src/yuntai_uart.cpp.s
+app/yuntai_uart.cpp.s:
+	cd /home/dango/dango_file/Yuntai_ws/build && $(MAKE) -f Yuntai_UART/CMakeFiles/yuntai_uart.dir/build.make Yuntai_UART/CMakeFiles/yuntai_uart.dir/app/yuntai_uart.cpp.s
+.PHONY : app/yuntai_uart.cpp.s
+
+src/UART_solve.o: src/UART_solve.cpp.o
+
+.PHONY : src/UART_solve.o
+
+# target to build an object file
+src/UART_solve.cpp.o:
+	cd /home/dango/dango_file/Yuntai_ws/build && $(MAKE) -f Yuntai_UART/CMakeFiles/UART_solve.dir/build.make Yuntai_UART/CMakeFiles/UART_solve.dir/src/UART_solve.cpp.o
+.PHONY : src/UART_solve.cpp.o
+
+src/UART_solve.i: src/UART_solve.cpp.i
+
+.PHONY : src/UART_solve.i
+
+# target to preprocess a source file
+src/UART_solve.cpp.i:
+	cd /home/dango/dango_file/Yuntai_ws/build && $(MAKE) -f Yuntai_UART/CMakeFiles/UART_solve.dir/build.make Yuntai_UART/CMakeFiles/UART_solve.dir/src/UART_solve.cpp.i
+.PHONY : src/UART_solve.cpp.i
+
+src/UART_solve.s: src/UART_solve.cpp.s
+
+.PHONY : src/UART_solve.s
+
+# target to generate assembly for a file
+src/UART_solve.cpp.s:
+	cd /home/dango/dango_file/Yuntai_ws/build && $(MAKE) -f Yuntai_UART/CMakeFiles/UART_solve.dir/build.make Yuntai_UART/CMakeFiles/UART_solve.dir/src/UART_solve.cpp.s
+.PHONY : src/UART_solve.cpp.s
 
 # Help Target
 help:
@@ -443,7 +485,6 @@ help:
 	@echo "... install/strip"
 	@echo "... install/local"
 	@echo "... rebuild_cache"
-	@echo "... test"
 	@echo "... list_install_components"
 	@echo "... roscpp_generate_messages_py"
 	@echo "... roscpp_generate_messages_eus"
@@ -452,10 +493,12 @@ help:
 	@echo "... rosgraph_msgs_generate_messages_cpp"
 	@echo "... std_msgs_generate_messages_lisp"
 	@echo "... roscpp_generate_messages_cpp"
-	@echo "... rosgraph_msgs_generate_messages_lisp"
 	@echo "... install"
-	@echo "... rosgraph_msgs_generate_messages_eus"
 	@echo "... yuntai_uart"
+	@echo "... rosgraph_msgs_generate_messages_eus"
+	@echo "... rosgraph_msgs_generate_messages_lisp"
+	@echo "... test"
+	@echo "... UART_solve"
 	@echo "... std_msgs_generate_messages_cpp"
 	@echo "... rosgraph_msgs_generate_messages_nodejs"
 	@echo "... rosgraph_msgs_generate_messages_py"
@@ -463,9 +506,12 @@ help:
 	@echo "... std_msgs_generate_messages_nodejs"
 	@echo "... roscpp_generate_messages_nodejs"
 	@echo "... std_msgs_generate_messages_py"
-	@echo "... src/yuntai_uart.o"
-	@echo "... src/yuntai_uart.i"
-	@echo "... src/yuntai_uart.s"
+	@echo "... app/yuntai_uart.o"
+	@echo "... app/yuntai_uart.i"
+	@echo "... app/yuntai_uart.s"
+	@echo "... src/UART_solve.o"
+	@echo "... src/UART_solve.i"
+	@echo "... src/UART_solve.s"
 .PHONY : help
 
 

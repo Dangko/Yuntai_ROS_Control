@@ -46,7 +46,6 @@
 /home/dango/dango_file/Yuntai_ws/build/Yuntai_UART/CMakeFiles/install/strip.dir
 /home/dango/dango_file/Yuntai_ws/build/Yuntai_UART/CMakeFiles/install/local.dir
 /home/dango/dango_file/Yuntai_ws/build/Yuntai_UART/CMakeFiles/rebuild_cache.dir
-/home/dango/dango_file/Yuntai_ws/build/Yuntai_UART/CMakeFiles/test.dir
 /home/dango/dango_file/Yuntai_ws/build/Yuntai_UART/CMakeFiles/list_install_components.dir
 /home/dango/dango_file/Yuntai_ws/build/Yuntai_UART/CMakeFiles/roscpp_generate_messages_py.dir
 /home/dango/dango_file/Yuntai_ws/build/Yuntai_UART/CMakeFiles/roscpp_generate_messages_eus.dir
@@ -55,10 +54,12 @@
 /home/dango/dango_file/Yuntai_ws/build/Yuntai_UART/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir
 /home/dango/dango_file/Yuntai_ws/build/Yuntai_UART/CMakeFiles/std_msgs_generate_messages_lisp.dir
 /home/dango/dango_file/Yuntai_ws/build/Yuntai_UART/CMakeFiles/roscpp_generate_messages_cpp.dir
-/home/dango/dango_file/Yuntai_ws/build/Yuntai_UART/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir
 /home/dango/dango_file/Yuntai_ws/build/Yuntai_UART/CMakeFiles/install.dir
-/home/dango/dango_file/Yuntai_ws/build/Yuntai_UART/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir
 /home/dango/dango_file/Yuntai_ws/build/Yuntai_UART/CMakeFiles/yuntai_uart.dir
+/home/dango/dango_file/Yuntai_ws/build/Yuntai_UART/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir
+/home/dango/dango_file/Yuntai_ws/build/Yuntai_UART/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir
+/home/dango/dango_file/Yuntai_ws/build/Yuntai_UART/CMakeFiles/test.dir
+/home/dango/dango_file/Yuntai_ws/build/Yuntai_UART/CMakeFiles/UART_solve.dir
 /home/dango/dango_file/Yuntai_ws/build/Yuntai_UART/CMakeFiles/std_msgs_generate_messages_cpp.dir
 /home/dango/dango_file/Yuntai_ws/build/Yuntai_UART/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir
 /home/dango/dango_file/Yuntai_ws/build/Yuntai_UART/CMakeFiles/rosgraph_msgs_generate_messages_py.dir

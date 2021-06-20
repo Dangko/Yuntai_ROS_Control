@@ -376,17 +376,17 @@ roscpp_generate_messages_cpp/fast:
 .PHONY : roscpp_generate_messages_cpp/fast
 
 #=============================================================================
-# Target rules for targets named rosgraph_msgs_generate_messages_lisp
+# Target rules for targets named yuntai_uart
 
 # Build rule for target.
-rosgraph_msgs_generate_messages_lisp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 rosgraph_msgs_generate_messages_lisp
-.PHONY : rosgraph_msgs_generate_messages_lisp
+yuntai_uart: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 yuntai_uart
+.PHONY : yuntai_uart
 
 # fast build rule for target.
-rosgraph_msgs_generate_messages_lisp/fast:
-	$(MAKE) -f Yuntai_UART/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build.make Yuntai_UART/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build
-.PHONY : rosgraph_msgs_generate_messages_lisp/fast
+yuntai_uart/fast:
+	$(MAKE) -f Yuntai_UART/CMakeFiles/yuntai_uart.dir/build.make Yuntai_UART/CMakeFiles/yuntai_uart.dir/build
+.PHONY : yuntai_uart/fast
 
 #=============================================================================
 # Target rules for targets named rosgraph_msgs_generate_messages_eus
@@ -402,17 +402,30 @@ rosgraph_msgs_generate_messages_eus/fast:
 .PHONY : rosgraph_msgs_generate_messages_eus/fast
 
 #=============================================================================
-# Target rules for targets named yuntai_uart
+# Target rules for targets named rosgraph_msgs_generate_messages_lisp
 
 # Build rule for target.
-yuntai_uart: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 yuntai_uart
-.PHONY : yuntai_uart
+rosgraph_msgs_generate_messages_lisp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 rosgraph_msgs_generate_messages_lisp
+.PHONY : rosgraph_msgs_generate_messages_lisp
 
 # fast build rule for target.
-yuntai_uart/fast:
-	$(MAKE) -f Yuntai_UART/CMakeFiles/yuntai_uart.dir/build.make Yuntai_UART/CMakeFiles/yuntai_uart.dir/build
-.PHONY : yuntai_uart/fast
+rosgraph_msgs_generate_messages_lisp/fast:
+	$(MAKE) -f Yuntai_UART/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build.make Yuntai_UART/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build
+.PHONY : rosgraph_msgs_generate_messages_lisp/fast
+
+#=============================================================================
+# Target rules for targets named UART_solve
+
+# Build rule for target.
+UART_solve: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 UART_solve
+.PHONY : UART_solve
+
+# fast build rule for target.
+UART_solve/fast:
+	$(MAKE) -f Yuntai_UART/CMakeFiles/UART_solve.dir/build.make Yuntai_UART/CMakeFiles/UART_solve.dir/build
+.PHONY : UART_solve/fast
 
 #=============================================================================
 # Target rules for targets named std_msgs_generate_messages_cpp
@@ -859,9 +872,10 @@ help:
 	@echo "... rosgraph_msgs_generate_messages_cpp"
 	@echo "... std_msgs_generate_messages_lisp"
 	@echo "... roscpp_generate_messages_cpp"
-	@echo "... rosgraph_msgs_generate_messages_lisp"
-	@echo "... rosgraph_msgs_generate_messages_eus"
 	@echo "... yuntai_uart"
+	@echo "... rosgraph_msgs_generate_messages_eus"
+	@echo "... rosgraph_msgs_generate_messages_lisp"
+	@echo "... UART_solve"
 	@echo "... std_msgs_generate_messages_cpp"
 	@echo "... rosgraph_msgs_generate_messages_nodejs"
 	@echo "... rosgraph_msgs_generate_messages_py"

@@ -266,6 +266,9 @@ SETUPTOOLS_DEB_LAYOUT:BOOL=ON
 //Name of the computer/site where compile is being run
 SITE:STRING=dango-Lenovo-Legion-R7000-2020
 
+//Dependencies for target
+UART_solve_LIB_DEPENDS:STATIC=
+
 //LSB Distrib tag
 UBUNTU:BOOL=TRUE
 
