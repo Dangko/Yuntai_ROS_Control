@@ -92,9 +92,9 @@
 
   消息类型：`geometry_msgs::Twist`
 
-  绕y轴速度：`twist.angular.y`
+  绕y轴pitch角速度：`twist.angular.y`
 
-  绕z轴速度：`twist.angular.z`
+  绕z轴yaw角速度：`twist.angular.z`
 
   发布`/vel`话题，并给上述内容赋值，即可控制绕y、z轴的速度，单位：`rpm`
 
@@ -114,7 +114,7 @@
 
   `pitch​`：`imu.orientation.y`
 
-  `yaw​`：`twist.orientation.z`
+  `yaw​`：`imu.orientation.z`
 
   发布`/pose`话题，并给上述内容赋值，即可控制云台的 `pitch`、`yaw​`，单位为角度制
 
@@ -160,11 +160,11 @@
 
 - `/pose\_feedback​`
 
-  `pitch`：`imu.orientation.y`
+  `yaw​`：`imu.orientation.y`
 
-  `yaw​`：`twist.orientation.z`
+  `pitch`：`imu.orientation.z`
 
-  订阅`/pose_feedback`话题，并获取上述内容，即可获取云台当前的 `pitch`$、`yaw`
+  订阅`/pose_feedback`话题，并获取上述内容，即可获取云台当前的 `yaw`$、`pitch`
 
 
 
